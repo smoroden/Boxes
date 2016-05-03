@@ -13,11 +13,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         Box *newBox = [[Box alloc]initWithWidth:2 andHeight:2 andLength:2];
-        Box *secondBox = [[Box alloc]initWithWidth:1 andHeight:2 andLength:1.5];
+        Box *secondBox = [[Box alloc]initWithWidth:2 andHeight:2 andLength:2];
         
         NSLog(@"The volume of the box is: %f", newBox.volume);
         
-        NSLog(@"%@", [newBox timesItFitsInside:secondBox]);
+        NSLog(@"new box fits in second box %f times.", [newBox timesItFitsInside:secondBox]);
     }
     return 0;
 }

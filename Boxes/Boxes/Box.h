@@ -16,6 +16,6 @@
 
 -(instancetype)initWithWidth:(float)width andHeight:(float)height andLength:(float)length;
 -(float)volume;
--(NSString *)timesItFitsInside:(Box *)otherBox;
+-(float)timesItFitsInside:(Box *)otherBox;
 
 @end

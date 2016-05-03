@@ -22,13 +22,9 @@
     return self.width * self.height * self.length;
 }
 
--(NSString *)timesItFitsInside:(Box *)otherBox {
-    NSLog(@"Self volume: %f, other voluem: %f", self.volume, otherBox.volume);
-    if (self.volume > otherBox.volume) {
-        return [NSString stringWithFormat:@"The first box fits inside: %f",floor(self.volume / otherBox.volume)];
-    } else {
-        return [NSString stringWithFormat:@"The second box fits inside: %f",floor(otherBox.volume / self.volume)];
-    }
+-(float)timesItFitsInside:(Box *)otherBox {
+//    NSLog(@"Self volume: %f, other voluem: %f", self.volume, otherBox.volume);
+    return self.volume > otherBox.volume ? 0 : floor(otherBox.volume / self.volume);
 }
 
 @end
