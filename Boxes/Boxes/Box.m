@@ -23,7 +23,6 @@
 }
 
 -(float)timesItFitsInside:(Box *)otherBox {
-//    NSLog(@"Self volume: %f, other voluem: %f", self.volume, otherBox.volume);
     return self.volume > otherBox.volume ? 0 : floor(otherBox.volume / self.volume);
 }
 
