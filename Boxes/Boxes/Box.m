@@ -10,7 +10,7 @@
 #import "Math.h"
 @implementation Box
 
--(Box *)initWithWidth:(float)width andHeight:(float)height andLength:(float)length {
+-(instancetype)initWithWidth:(float)width andHeight:(float)height andLength:(float)length {
     
     self.width = width;
     self.height = height;

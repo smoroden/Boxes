@@ -14,7 +14,7 @@
 @property (nonatomic, assign) float width;
 @property (nonatomic, assign) float length;
 
--(Box *)initWithWidth:(float)width andHeight:(float)height andLength:(float)length;
+-(instancetype)initWithWidth:(float)width andHeight:(float)height andLength:(float)length;
 -(float)volume;
 -(NSString *)timesItFitsInside:(Box *)otherBox;
 
