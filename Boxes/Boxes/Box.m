@@ -22,8 +22,12 @@
     return self.width * self.height * self.length;
 }
 
+-(BOOL)isBiggerThan:(Box *)otherBox {
+    return self.volume > otherBox.volume;
+}
+
 -(float)timesItFitsInside:(Box *)otherBox {
-    return self.volume > otherBox.volume ? 0 : floor(otherBox.volume / self.volume);
+    return [self isBiggerThan:otherBox] ? 0 : floor(otherBox.volume / self.volume);
 }
 
 @end
